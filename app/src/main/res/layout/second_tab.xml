@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/frag_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="com.example.videodemo.fragment.PagerTopFragment"
+        tools:layout="@layout/farg_top_tab" />
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/frag_recycle_major"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="48dp"
+        android:name="com.example.videodemo.fragment.PagerBottomFragment"
+        tools:layout="@layout/frag_tab_common" />
+
+</FrameLayout>

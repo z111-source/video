@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">VideoDemo</string>
+    <string name="tab1">在追</string>
+    <string name="tab2">短剧</string>
+    <string name="tab3">会员</string>
+    <string name="tab4">我的</string>
+
+    <string name="tab5">热门</string>
+    <string name="tab6">专享</string>
+    <string name="tab7">逆袭</string>
+    <string name="tab8">爱情</string>
+    <string name="tab9">重生</string>
+    <string name="tab10">赘婿</string>
+    <string name="tab11">神医</string>
+    <string name="tab12">家庭</string>
+    <string name="book_name">长风渡</string>
+    <string name="book_state">已完结</string>
+
+
+</resources>
