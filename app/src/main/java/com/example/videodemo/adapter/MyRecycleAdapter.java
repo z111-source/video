@@ -1,6 +1,4 @@
 package com.example.videodemo.adapter;
-
-import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -24,16 +22,15 @@ public class MyRecycleAdapter extends RecyclerView.Adapter<MyRecycleAdapter.MyVi
 
     @NonNull
     @Override
-    public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public MyViewHolder onCreateViewHolder( ViewGroup parent, int viewType) {
         return new MyViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.recycle_item, parent, false));     //root?
     }
 
     @Override
-    public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
+    public void onBindViewHolder( MyViewHolder holder, int position) {
         holder.imageView.setImageResource(bookList.get(position).getImageId());
         holder.name.setText(bookList.get(position).getName());
         holder.state.setText(bookList.get(position).getState());
-
     }
 
     @Override
@@ -47,7 +44,7 @@ public class MyRecycleAdapter extends RecyclerView.Adapter<MyRecycleAdapter.MyVi
         private final TextView state;
         private final ImageView imageView;
 
-        public MyViewHolder(@NonNull View itemView) {
+        public MyViewHolder( View itemView) {
             super(itemView);
             name = itemView.findViewById(R.id.tv_book_name);
             state = itemView.findViewById(R.id.tv_book_state);
