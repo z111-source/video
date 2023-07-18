@@ -15,7 +15,6 @@ public class MyPagerAdapter extends FragmentStateAdapter {
         this.mFragmentList = mFragmentList;
     }
 
-
     @NonNull
     @Override
     public Fragment createFragment(int position) {

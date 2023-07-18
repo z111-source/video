@@ -9,7 +9,8 @@
         android:id="@+id/view_paper"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="@dimen/tab_height"/>
+        android:layout_marginBottom="@dimen/tab_height"
+        android:background="@color/gray" />
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tab_down_layout"
@@ -19,22 +20,7 @@
         app:tabIndicatorColor="@color/white"
         app:tabMode="fixed"
         app:tabSelectedTextColor="@color/purple_500"
-        app:tabTextColor="@color/grey" >
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/tab1"/>
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/tab2"/>
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/tab3"/>
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/tab4"/>
+        app:tabTextColor="@color/tab_bottom">
+
     </com.google.android.material.tabs.TabLayout>
 </RelativeLayout>

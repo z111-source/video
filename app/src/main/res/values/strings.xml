@@ -13,8 +13,18 @@
     <string name="tab10">赘婿</string>
     <string name="tab11">神医</string>
     <string name="tab12">家庭</string>
-    <string name="book_name">长风渡</string>
-    <string name="book_state">已完结</string>
 
+    <string name="book_name1">楚乔传</string>
+    <string name="book_name2">西游记</string>
+    <string name="book_name3">水浒传</string>
+    <string name="book_name4">长风渡</string>
+    <string name="book_name5">回家的诱惑</string>
+    <string name="book_name6">长风渡</string>
+    <string name="book_name7">泰坦尼克号</string>
 
+    <string name="book_state1">更新中（34集）</string>
+    <string name="book_state2">已完结（60集）</string>
+    <string name="book_state3">更新中（22集）</string>
+    <string name="book_state4">已完结（87集）</string>
+    <string name="book_state5">已完结（89集）</string>
 </resources>
