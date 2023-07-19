@@ -1,4 +1,4 @@
-package com.example.videodemo;
+package com.example.videodemo.book;
 
 import android.widget.ImageView;
 

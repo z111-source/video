@@ -10,7 +10,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.viewpager2.widget.ViewPager2;
 
-import com.example.videodemo.Book;
+import com.example.videodemo.book.Book;
 import com.example.videodemo.R;
 
 import com.example.videodemo.adapter.MyPagerAdapter;

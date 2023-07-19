@@ -11,7 +11,7 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.videodemo.Book;
+import com.example.videodemo.book.Book;
 import com.example.videodemo.R;
 import com.example.videodemo.adapter.MyRecycleAdapter;
 
@@ -33,12 +33,18 @@ public class PagerBottomFragment extends Fragment {
         return view;
     }
 
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+
+    }
 
     private void initRecyclerView() {
 //        PagerSnapHelper pagerSnapHelper = new PagerSnapHelper();
 //        pagerSnapHelper.attachToRecyclerView(recyclerView);
         recyclerView.setLayoutManager(new GridLayoutManager(getContext(), 2));
-        MyRecycleAdapter myRecycleAdapter = new MyRecycleAdapter(bookList);
+        MyRecycleAdapter myRecycleAdapter = new MyRecycleAdapter(bookList, getContext());
         recyclerView.setAdapter(myRecycleAdapter);
     }
 }

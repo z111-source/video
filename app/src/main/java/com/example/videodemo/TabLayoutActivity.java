@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment;
 import androidx.viewpager2.widget.ViewPager2;
 
 import com.example.videodemo.adapter.MyPagerAdapter;
+import com.example.videodemo.book.Book;
 import com.example.videodemo.fragment.PagerBottomFragment;
 import com.example.videodemo.fragment.SecFragment;
 import com.google.android.material.tabs.TabLayout;
@@ -42,7 +43,8 @@ public class TabLayoutActivity extends AppCompatActivity {
         viewPager.setOffscreenPageLimit(4);     //设置viewPager2最大页数
         new TabLayoutMediator(tabLayout, viewPager, (tab, position) -> {
             tab.setText(titles.get(position));
-        }).attach();
+        }).attach(); //TabLayoutMediator绑定tabLayout和viewPager2,注意.attach();
+
 //        viewPager.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {   //登记注册viewPaper2滑动监听
 //            @Override
 //            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
@@ -50,7 +52,7 @@ public class TabLayoutActivity extends AppCompatActivity {
 //            }
 //        });
 
-        //TabLayoutMediator绑定tabLayout和viewPager2,注意.attach();
+
     }
 
     private void initBookData() {

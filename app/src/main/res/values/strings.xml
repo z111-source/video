@@ -27,4 +27,27 @@
     <string name="book_state3">更新中（22集）</string>
     <string name="book_state4">已完结（87集）</string>
     <string name="book_state5">已完结（89集）</string>
+
+    <string name="num_1">第1集</string>
+    <string name="num_2">第2集</string>
+    <string name="num_3">第3集</string>
+    <string name="num_4">第4集</string>
+    <string name="num_5">第5集</string>
+    <string name="num_6">第6集</string>
+    <string name="num_7">第7集</string>
+    <string name="num_8">第8集</string>
+    <string name="num_9">第9集</string>
+    <string name="num_10">第10集</string>
+    <string name="num_11">第11集</string>
+    <string name="num_12">第12集</string>
+    <string name="num_13">第13集</string>
+
+    <string name="intro_1">初相识哈哈哈红红火火恍恍惚惚</string>
+    <string name="intro_2">打起来打起来嘻嘻嘻嘻嘻嘻嘻嘻</string>
+    <string name="intro_3">不打不相识哈哈哈哈哈哈哈哈哈</string>
+    <string name="intro_4">恨意涌动她她她她她她她</string>
+    <string name="intro_5">爱意萌生啊啊啊啊啊啊啊啊</string>
+    <string name="intro_6">心生愧疚哇哇哇哇哇哇哇哇哇哇</string>
+
+
 </resources>
