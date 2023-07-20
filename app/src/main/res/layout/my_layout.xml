@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_image">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/head_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.qmuiteam.qmui.widget.QMUIRadiusImageView2
+            android:id="@+id/img_head"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:qmui_corner_radius="49dp" />
+
+        <TextView
+            android:id="@+id/tv_person_name"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="28dp"
+            android:gravity="bottom"
+            android:text="hh"
+            android:textColor="@color/black"
+            android:textSize="23sp"
+            app:layout_constraintStart_toEndOf="@id/img_head"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_person_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="28dp"
+            android:gravity="center_vertical"
+            android:text="hh"
+            android:textColor="@color/grey"
+            android:textSize="19sp"
+            app:layout_constraintStart_toEndOf="@id/img_head"
+            app:layout_constraintTop_toBottomOf="@id/tv_person_name" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my_height"
+        android:layout_marginStart="@dimen/my_margin_start"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="@dimen/my_margin_start"
+        android:background="@drawable/shape_book"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/head_layout">
+
+        <ImageView
+            android:id="@+id/img_star"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="22dp"
+            android:src="@drawable/star"
+            app:layout_constraintEnd_toStartOf="@id/tv_star"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_star"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="9dp"
+            android:gravity="center_vertical|start"
+            android:text="收藏"
+            android:textColor="@color/grey"
+            android:textSize="17sp"
+            app:layout_constraintStart_toEndOf="@id/img_star" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my_height"
+        android:layout_marginStart="@dimen/my_margin_start"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="@dimen/my_margin_start"
+        android:background="@drawable/shape_book"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_4">
+
+        <ImageView
+            android:id="@+id/img_build"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="22dp"
+            android:src="@drawable/setting"
+            app:layout_constraintEnd_toStartOf="@id/tv_build"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_build"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="9dp"
+            android:gravity="center_vertical|start"
+            android:text="设置"
+            android:textColor="@color/grey"
+            android:textSize="17sp"
+            app:layout_constraintStart_toEndOf="@id/img_build" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my_height"
+        android:layout_marginStart="@dimen/my_margin_start"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="@dimen/my_margin_start"
+        android:background="@drawable/shape_book"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_1">
+
+        <ImageView
+            android:id="@+id/img_person"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="22dp"
+            android:src="@drawable/person"
+            app:layout_constraintEnd_toStartOf="@id/tv_person"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_person"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="9dp"
+            android:gravity="center_vertical|start"
+            android:text="我的"
+            android:textColor="@color/grey"
+            android:textSize="17sp"
+            app:layout_constraintStart_toEndOf="@id/img_person" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my_height"
+        android:layout_marginStart="@dimen/my_margin_start"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="@dimen/my_margin_start"
+        android:background="@drawable/shape_book"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_2">
+
+        <ImageView
+            android:id="@+id/img_version"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="22dp"
+            android:src="@drawable/build"
+            app:layout_constraintEnd_toStartOf="@id/tv_version"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_version"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="9dp"
+            android:gravity="center_vertical|start"
+            android:text="版本"
+            android:textColor="@color/grey"
+            android:textSize="17sp"
+            app:layout_constraintStart_toEndOf="@id/img_version" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

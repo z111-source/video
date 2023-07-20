@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -37,6 +38,7 @@ public class SecFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         TabLayout tabLayout2 = view.findViewById(R.id.tab_top_layout);
         ViewPager2 viewPager2 = view.findViewById(R.id.sec_pager);
+        ImageButton search = view.findViewById(R.id.btn_search);
 
         List<String> titles = List.of(getString(R.string.tab5), getString(R.string.tab6), getString(R.string.tab7), getString(R.string.tab8), getString(R.string.tab9), getString(R.string.tab10), getString(R.string.tab11));
         List<Fragment> fragmentList = List.of(new PagerBottomFragment(bookList), new PagerBottomFragment(bookList), new PagerBottomFragment(bookList),
@@ -56,6 +58,12 @@ public class SecFragment extends Fragment {
 //                super.onPageScrolled(position, positionOffset, positionOffsetPixels);
 //            }
 //        });
+        search.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
 
     }
 

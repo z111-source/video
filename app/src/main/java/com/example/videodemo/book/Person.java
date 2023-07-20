@@ -1,17 +1,14 @@
 package com.example.videodemo.book;
 
-import android.widget.ImageView;
-
-public class Book {
-    private final String videoSource ="CSJ";
+public class Person {
     private String name;
-    private String state;
+    private String phone;
     private int imageId;
 
-    public Book(String name, String state, int imgId) {
+    public Person(String name, String phone, int imageId) {
         this.name = name;
-        this.state = state;
-        this.imageId = imgId;
+        this.phone = phone;
+        this.imageId = imageId;
     }
 
     public String getName() {
@@ -22,14 +19,13 @@ public class Book {
         this.name = name;
     }
 
-    public String getState() {
-        return state;
+    public String getPhone() {
+        return phone;
     }
 
-    public void setState(String state) {
-        this.state = state;
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
-
 
     public int getImageId() {
         return imageId;
