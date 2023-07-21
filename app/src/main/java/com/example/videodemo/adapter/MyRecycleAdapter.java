@@ -35,9 +35,9 @@ public class MyRecycleAdapter extends RecyclerView.Adapter<MyRecycleAdapter.MyVi
 
     @Override
     public void onBindViewHolder( MyViewHolder holder, int position) {
-        holder.imageView.setImageResource(bookList.get(position).getImageId());
-        holder.name.setText(bookList.get(position).getName());
-        holder.state.setText(bookList.get(position).getState());
+        holder.imageView.setImageResource(bookList.get(position).imageId);
+        holder.name.setText(bookList.get(position).name);
+        holder.state.setText(bookList.get(position).state);
 
         holder.itemView.setOnClickListener(view -> {
             Intent intent = new Intent(context, ChooseActivity.class);

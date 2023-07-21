@@ -1,41 +1,24 @@
 package com.example.videodemo.book;
 
-import android.widget.ImageView;
+import com.google.gson.annotations.SerializedName;
 
 public class Book {
-    private final String videoSource ="CSJ";
-    private String name;
-    private String state;
-    private int imageId;
+    @SerializedName("videoSource")
+    public String videoSource;
 
-    public Book(String name, String state, int imgId) {
-        this.name = name;
-        this.state = state;
-        this.imageId = imgId;
-    }
+    @SerializedName("title")
+    public String name;
 
-    public String getName() {
-        return name;
-    }
+    @SerializedName("state")
+    public String state;
 
-    public void setName(String name) {
-        this.name = name;
-    }
+    @SerializedName("coverImage")
+    public int imageId;
 
-    public String getState() {
-        return state;
-    }
+    @SerializedName("desc")
+    public String content;
 
-    public void setState(String state) {
-        this.state = state;
-    }
+    @SerializedName("type")
+    public String type;
 
-
-    public int getImageId() {
-        return imageId;
-    }
-
-    public void setImageId(int imageId) {
-        this.imageId = imageId;
-    }
 }

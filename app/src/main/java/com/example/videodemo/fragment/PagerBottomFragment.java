@@ -18,11 +18,11 @@ import com.example.videodemo.adapter.MyRecycleAdapter;
 import java.util.List;
 
 public class PagerBottomFragment extends Fragment {
-    private final List<Book> bookList;
+    private final List<Book> mBookList;
     private RecyclerView recyclerView;
 
     public PagerBottomFragment(List<Book> bookList) {
-        this.bookList = bookList;
+        this.mBookList = bookList;
     }
 
     @Override
@@ -44,7 +44,7 @@ public class PagerBottomFragment extends Fragment {
 //        PagerSnapHelper pagerSnapHelper = new PagerSnapHelper();
 //        pagerSnapHelper.attachToRecyclerView(recyclerView);
         recyclerView.setLayoutManager(new GridLayoutManager(getContext(), 2));
-        MyRecycleAdapter myRecycleAdapter = new MyRecycleAdapter(bookList, getContext());
+        MyRecycleAdapter myRecycleAdapter = new MyRecycleAdapter(mBookList, getContext());
         recyclerView.setAdapter(myRecycleAdapter);
     }
 }

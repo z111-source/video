@@ -11,7 +11,6 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.viewpager2.widget.ViewPager2;
 
-import com.example.videodemo.book.Book;
 import com.example.videodemo.R;
 
 import com.example.videodemo.adapter.MyPagerAdapter;
@@ -21,11 +20,13 @@ import com.google.android.material.tabs.TabLayoutMediator;
 import java.util.List;
 
 public class SecFragment extends Fragment {
-    private final List<Book> bookList;
+    List<Fragment> fragmentList;
 
-    public SecFragment(List<Book> bookList) {
-        this.bookList = bookList;
+
+    public SecFragment(List<Fragment> fragmentList) {
+        this.fragmentList = fragmentList;
     }
+
 
     @Nullable
     @Override
@@ -40,9 +41,9 @@ public class SecFragment extends Fragment {
         ViewPager2 viewPager2 = view.findViewById(R.id.sec_pager);
         ImageButton search = view.findViewById(R.id.btn_search);
 
-        List<String> titles = List.of(getString(R.string.tab5), getString(R.string.tab6), getString(R.string.tab7), getString(R.string.tab8), getString(R.string.tab9), getString(R.string.tab10), getString(R.string.tab11));
-        List<Fragment> fragmentList = List.of(new PagerBottomFragment(bookList), new PagerBottomFragment(bookList), new PagerBottomFragment(bookList),
-                new PagerBottomFragment(bookList), new PagerBottomFragment(bookList), new PagerBottomFragment(bookList), new PagerBottomFragment(bookList));
+
+        List<String> titles = List.of(getString(R.string.tab5), getString(R.string.tab7), getString(R.string.tab8), getString(R.string.tab9), getString(R.string.tab10), getString(R.string.tab11),getString(R.string.tab12));
+
         MyPagerAdapter myPagerAdapter2 = new MyPagerAdapter(getActivity(), fragmentList);
         viewPager2.setAdapter(myPagerAdapter2);
         viewPager2.setCurrentItem(0);
@@ -66,5 +67,7 @@ public class SecFragment extends Fragment {
         });
 
     }
+
+
 
 }
