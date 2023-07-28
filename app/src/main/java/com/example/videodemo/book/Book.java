@@ -2,18 +2,22 @@ package com.example.videodemo.book;
 
 import com.google.gson.annotations.SerializedName;
 
-public class Book {
+import java.io.Serializable;
+
+public class Book implements Serializable {
     @SerializedName("videoSource")
     public String videoSource;
 
     @SerializedName("title")
     public String name;
+    @SerializedName("total")
+    public int total;
 
-    @SerializedName("state")
-    public String state;
+    @SerializedName("status")
+    public int state;
 
     @SerializedName("coverImage")
-    public int imageId;
+    public String imageId;
 
     @SerializedName("desc")
     public String content;

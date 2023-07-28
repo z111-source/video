@@ -25,6 +25,7 @@ public class ChooseActivity extends AppCompatActivity {
         recyclerView.setAdapter(chooseAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this,RecyclerView.VERTICAL,false));
 
+
     }
     private void initChoose(){
         chooses = List.of(new Choose(getString(R.string.num_1),getString(R.string.intro_1)),
